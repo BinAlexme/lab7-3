@@ -17,3 +17,8 @@ assert average_num([2.5, 3.5]) == 3
 assert average_num([1, 2, 3]) == 2
 assert average_num([1.1, 2.2, 3.3]) == 2.2
 assert average_num([-1, -2, -3]) == -2
+assert average_num([2, [3, 4, 5], 6, 8]) == "Bad request"
+assert average_num([2, "True", 4.8, 8]) == "Bad request"
+assert average_num([1, 2, 3, True]) == "Bad request"
+assert average_num([1, 2, 6, False]) == "Bad request"
+# assert average_num(12) == "Bad request"  TypeError
