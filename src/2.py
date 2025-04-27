@@ -12,8 +12,8 @@ assert is_palindrome(False) == "Это не строка"
 assert is_palindrome(12) == "Это не строка"
 assert is_palindrome("0") == True
 assert is_palindrome("gg") == True
-assert is_palindrome("23kgrgl, efiisef, 9") == True
-assert is_palindrome("Леша на полке нашел") == True
-assert is_palindrome("Леша на полке нашел мышь!") == True
+assert is_palindrome("23kgrgl, efiisef, 9") == False
+assert is_palindrome("Леша на полке нашел") == False
+assert is_palindrome("Леша на полке нашел мышь!") == False
 assert is_palindrome("pididi") == False
 assert is_palindrome("glc") == False
